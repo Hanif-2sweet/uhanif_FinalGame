@@ -18,11 +18,17 @@ public class SlidingDoor : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        animator.SetBool("isOpen", true);
+        if(other.gameObject.tag == "Player")
+        {
+          animator.SetBool("isOpen", true);
+        }
     }
 
     private void OnTriggerExit(Collider other) {
-        animator.SetBool("isOpen", false);
+        if(other.gameObject.tag == "Player")
+        {
+          animator.SetBool("isOpen", false);
+        }
     }
 }
 

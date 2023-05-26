@@ -10,7 +10,7 @@ public class WaterTimer : MonoBehaviour
     [SerializeField]
     private float timerSpeed = 5f;
 
-    private float lastTimestamp;
+    public float lastTimestamp;
     
     private void Update()
     { 

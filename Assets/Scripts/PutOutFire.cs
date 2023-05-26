@@ -18,8 +18,9 @@ public class PutOutFire : MonoBehaviour
             
             if (Input.GetKey(KeyCode.E))
             {
-                this.gameObject.SetActive(false);
                 outFire.Invoke();
+                this.gameObject.SetActive(false);
+                
             }
          
         }
